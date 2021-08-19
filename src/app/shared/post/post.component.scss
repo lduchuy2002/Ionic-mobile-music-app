@@ -1,0 +1,14 @@
+.post{
+    --background: #311F77;
+    &-avatar{
+        width: 50px;
+    }
+}
+
+ion-note{
+    --color: #a8a8a8;
+}
+
+ion-img::part(image) {
+    border-radius: 20px;
+  }

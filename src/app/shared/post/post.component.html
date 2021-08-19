@@ -1,0 +1,38 @@
+<ion-card>
+  <ion-item class="post rounded-16 ion-margin">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="d-flex align-items-center">
+              <ion-img src="../../../assets/avatar.png" class="post-avatar"></ion-img>
+              <ion-label class="ion-text-start font-size-16 font-weight-300 ion-margin-start" color="light">Andre Reid</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-img [src]="postImage" class="mt-2 w-100"></ion-img>
+      </ion-row>
+      <ion-row>
+        <ion-text class="text-white font-size-16 font-weight-100 ion-margin-top">
+          {{postContent}}
+        </ion-text>
+      </ion-row>
+      <ion-row>
+        <ion-note class="mt-1">
+          Madeline Juno
+        </ion-note>
+      </ion-row>
+      <ion-row class="my-1 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="text-center d-flex align-items-center">
+            <ion-icon name="chatbox-sharp" color="light"></ion-icon>
+            <ion-note color="light" class="ms-2 font-wegiht-700">4.5K</ion-note>
+          </div>
+          <div class="text-center d-flex align-items-center ms-2">
+            <ion-icon name="heart-sharp" color="danger"></ion-icon>
+            <ion-note color="light" class="ms-2 font-weight-700">900</ion-note>
+          </div>
+        </div>
+        <ion-text color="primary">54 mins ago</ion-text>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-card>

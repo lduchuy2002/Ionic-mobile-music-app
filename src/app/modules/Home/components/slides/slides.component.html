@@ -1,0 +1,19 @@
+<div>
+  <div class="d-flex align-items-center justify-content-between">
+    <h3 class="text-white slide-title" slot="start">{{title}}</h3>
+    <ion-button fill="clear" slot="end" (click)="next()">
+      <ion-icon name="chevron-forward-outline" color="light"></ion-icon>
+    </ion-button>
+  </div>
+  <div>
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, gradCursor: true }">
+      <ion-slide class="ion-padding-end" *ngFor="let m of list">
+        <div>
+          <ion-img [src]="m.img"></ion-img>
+          <ion-text class="text-white ion-margin-top d-block text-start title">{{m.title}}</ion-text>
+          <ion-text class="ion-margin-top d-block text-start singer">{{m.singer}}</ion-text>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</div>

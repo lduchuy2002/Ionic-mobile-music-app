@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="container ion-padding">
+    <ion-header>
+      <ion-toolbar>
+        <div class="w-50 d-flex align-items-center justify-content-between">
+          <ion-buttons slot="icon-only">
+            <ion-back-button
+              defaultHref="logout"
+              class="text-white w-75"
+              text=""
+              [icon]="'chevron-back'"
+              slot="icon-only"
+            >
+            </ion-back-button>
+          </ion-buttons>
+          <span class="text-white d-inline page-title"> List </span>
+        </div>
+        <ion-searchbar
+          inputmode="search"
+          showCancelButton="focus"
+          animated
+          placeholder="Music, Playlist, Singer..."
+          color="secondary"
+          autocorrect="on"
+          searchIcon="search-sharp"
+          spellcheck="true"
+          class="search p-0 mx-auto"
+        ></ion-searchbar>
+      </ion-toolbar>
+    </ion-header>
+    <!-- MV -->
+    <app-slides [title]="'MV'" [list]="mv"></app-slides>
+    <!-- RECOMENDED -->
+    <app-slides [title]="'Recomend'" [list]="recomended"></app-slides>
+  </div>
+</ion-content>
