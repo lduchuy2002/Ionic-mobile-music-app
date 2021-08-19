@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { MVModel } from '../../models/mv.model';
 
 import { UltilService } from '../../services/ultil.service';
 
@@ -8,12 +10,12 @@ import { UltilService } from '../../services/ultil.service';
   styleUrls: ['./index.component.scss'],
 })
 export class IndexComponent implements OnInit {
-  public mv = [];
-  public recomended = [];
+  public mv$: Observable<MVModel[]>;
+  public recomended$: Observable<MVModel[]>;
   constructor(private ultilService: UltilService) {}
 
   public ngOnInit() {
-    this.mv = this.ultilService.getMV();
-    this.recomended = this.ultilService.getRecomended();
+    this.mv$ = this.ultilService.getMV();
+    this.recomended$ = this.ultilService.getRecomended();
   }
 }

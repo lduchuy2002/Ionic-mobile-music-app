@@ -29,8 +29,8 @@
       </ion-toolbar>
     </ion-header>
     <!-- MV -->
-    <app-slides [title]="'MV'" [list]="mv"></app-slides>
+    <app-slides [title]="'MV'" [list]="(mv$ | async)"></app-slides>
     <!-- RECOMENDED -->
-    <app-slides [title]="'Recomend'" [list]="recomended"></app-slides>
+      <app-slides [title]="'Recomend'" [list]="(recomended$ | async)"></app-slides>
   </div>
 </ion-content>
