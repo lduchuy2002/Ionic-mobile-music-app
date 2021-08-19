@@ -35,19 +35,19 @@ body {
 
 @for $i from 6 through 30 {
   .rounded-#{$i} {
-    --border-radius: #{$i}px!important;
+    --border-radius: #{$i}px !important;
   }
 }
 
 @for $i from 5 through 30 {
   .font-size-#{$i} {
-    font-size: #{$i}px!important;
+    font-size: #{$i}px !important;
   }
 }
 
 @for $i from 1 through 9 {
   .font-weight-#{$i}00 {
-    font-weight: #{$i * 100}!important;
+    font-weight: #{$i * 100} !important;
   }
 }
 
@@ -56,17 +56,19 @@ body {
   font-weight: 700;
 }
 
-ion-toolbar,ion-item{
+ion-toolbar,
+ion-item {
   --background: inherit;
 }
 
-ion-back-button{
-  &::part(native){
+ion-back-button {
+  &::part(native) {
     padding: 0;
-    ion-ripple-effect,span{
-      width: 24px!important;
+    ion-ripple-effect,
+    span {
+      width: 24px !important;
     }
-    &::after{
+    &::after {
       width: 24px;
     }
   }

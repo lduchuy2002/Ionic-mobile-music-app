@@ -9,6 +9,6 @@ export class TabBarsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  public ngOnInit() {}
 
 }

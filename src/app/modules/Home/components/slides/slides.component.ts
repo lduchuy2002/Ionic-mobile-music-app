@@ -12,7 +12,7 @@ export class SlidesComponent implements OnInit {
 
   @Input() public title: string;
   @Input() public list: MVModel;
-  constructor() { }
+  constructor() {}
 
   public ngOnInit() {}
   public next() {

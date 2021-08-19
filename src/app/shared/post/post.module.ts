@@ -3,18 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { PostComponent } from './post.component';
 
-
-
 @NgModule({
-  declarations: [
-    PostComponent
-  ],
-  imports: [
-    CommonModule,
-    IonicModule
-  ],
-  exports: [
-    PostComponent
-  ]
+  declarations: [PostComponent],
+  imports: [CommonModule, IonicModule],
+  exports: [PostComponent],
 })
-export class PostModule { }
+export class PostModule {}
