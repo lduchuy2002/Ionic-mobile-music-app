@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { MVModel } from '../models/mv.model';
@@ -6,7 +7,7 @@ import { MVModel } from '../models/mv.model';
   providedIn: 'root',
 })
 export class UltilService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   public getMV(): Observable<MVModel[]> {
     return of([
