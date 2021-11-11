@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginPageComponent } from './modules/account/pages/login-page/login-page.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       import('./modules/account/account.module').then(
         (m) => m.AccountPageModule
       ),
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
   },
   {
     path: '',
